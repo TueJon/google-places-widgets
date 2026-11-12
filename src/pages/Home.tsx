@@ -169,7 +169,7 @@ export const Home = () => {
                 <label className={`block text-sm font-medium mb-1 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-700'}`}>Author Name Display</label>
                 <select
                   value={authorNameDisplay}
-                  onChange={(e) => setAuthorNameDisplay(e.target.value as any)}
+                  onChange={(e) => setAuthorNameDisplay(e.target.value as typeof authorNameDisplay)}
                   className={`block w-full rounded-md shadow-sm sm:text-sm p-2 border ${theme === 'dark' ? 'bg-zinc-700 border-zinc-600 text-white' : 'border-gray-300 focus:border-blue-500 focus:ring-blue-500'}`}
                 >
                   <option value="full">Full Name</option>
